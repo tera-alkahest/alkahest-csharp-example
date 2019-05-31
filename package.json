@@ -1,0 +1,11 @@
+{
+    "version": "1.0.0",
+    "contributors": [
+        "alexrp"
+    ],
+    "files": [
+        "LICENSE.md",
+        "Main.cs",
+        "README.md"
+    ]
+}
