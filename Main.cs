@@ -19,8 +19,8 @@ namespace Alkahest.Scripts.Example
         }
 
         // The special function __Start__ is invoked on startup. The proxies
-        // parameter is an array of Alkahest.Core.Net.GameProxy instances. The
-        // log parameter is an Alkahest.Core.Logging.Log instance created
+        // parameter is an array of Alkahest.Core.Net.Game.GameProxy objects.
+        // The log parameter is an Alkahest.Core.Logging.Log object created
         // specifically for this script package.
         public static void __Start__(GameProxy[] proxies, Log log)
         {
