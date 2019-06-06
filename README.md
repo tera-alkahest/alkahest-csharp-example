@@ -1,6 +1,8 @@
-# Alkahest C# Example
+# Alkahest Example
 
 This is an example C# script package for **Alkahest**.
+
+You can use this repository as a template on GitHub.
 
 ## License
 
