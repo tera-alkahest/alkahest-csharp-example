@@ -2,7 +2,7 @@
 
 This is an example C# script package for **Alkahest**.
 
-You can use this repository as a template on GitHub.
+[You can use this repository as a template on GitHub.](https://github.com/tera-alkahest/alkahest-example/generate)
 
 ## License
 
