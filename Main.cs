@@ -19,22 +19,22 @@ namespace Alkahest.Scripts.Example
             return true;
         }
 
-        public static void __Start__(CSharpScriptContext context, GameProxy[] proxies)
+        public static void __Start__(CSharpScriptContext context)
         {
             _context = context;
 
-            foreach (var proc in proxies.Select(x => x.Processor))
+            foreach (var proc in context.Proxies.Select(x => x.Processor))
                 proc.AddHandler<CCheckVersionPacket>(HandleCheckVersion);
 
-            _context.Log.Basic("Started example script");
+            context.Log.Basic("Started example script");
         }
 
-        public static void __Stop__(CSharpScriptContext context, GameProxy[] proxies)
+        public static void __Stop__(CSharpScriptContext context)
         {
-            foreach (var proc in proxies.Select(x => x.Processor))
+            foreach (var proc in context.Proxies.Select(x => x.Processor))
                 proc.RemoveHandler<CCheckVersionPacket>(HandleCheckVersion);
 
-            _context.Log.Basic("Stopped example script");
+            context.Log.Basic("Stopped example script");
         }
     }
 }
